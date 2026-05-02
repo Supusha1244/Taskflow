@@ -1,0 +1,35 @@
+.tasks-table {
+  width: 100%; border-collapse: collapse; font-size: 14px;
+}
+.tasks-table th {
+  text-align: left; padding: 12px 16px;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--text-2); font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+}
+.tasks-table td {
+  padding: 12px 16px; border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.tasks-table tr:last-child td { border-bottom: none; }
+.tasks-table tr:hover td { background: var(--surface-2); }
+.tasks-table .overdue-row td { background: rgba(240,68,68,0.03); }
+
+.task-title-cell { display: flex; flex-direction: column; gap: 3px; }
+.task-title-text { font-weight: 500; }
+.task-desc-preview {
+  font-size: 12px; color: var(--text-2);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 280px;
+}
+
+.project-link { text-decoration: none; font-size: 13px; font-weight: 500; }
+.project-link:hover { text-decoration: underline; }
+
+.status-select {
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-radius: 20px; color: var(--text); padding: 5px 10px;
+  font-size: 12px; font-family: inherit; cursor: pointer;
+  outline: none;
+}
+.status-select:focus { border-color: var(--accent); }
