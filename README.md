@@ -120,8 +120,6 @@ cd task-manager
 ### 2. Backend setup
 ```bash
 cd backend
-cp .env.example .env
-# Edit .env with your MongoDB URI and JWT secret
 npm install
 npm run dev
 ```
@@ -129,8 +127,6 @@ npm run dev
 ### 3. Frontend setup
 ```bash
 cd frontend
-cp .env.example .env
-# Edit .env: REACT_APP_API_URL=http://localhost:5000/api
 npm install
 npm start
 ```
